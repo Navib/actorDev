@@ -14,11 +14,10 @@ var mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
   },
  });
- mySwiper.on('slideChangeTransitionStart', function () {
+ mySwiper.on('transitionStart', function () {
    const slideIndex = mySwiper.realIndex;
    const prevIndex =  slideIndex - 1;
    const nextIndex = slideIndex + 1;
-
      //Current
     $('.swiper-slide:eq('+slideIndex+')').children().css({height:'100%'});
     $('.swiper-slide:eq('+prevIndex+')').children().css({height:'0%', top:'0', bottom:'initial'});
