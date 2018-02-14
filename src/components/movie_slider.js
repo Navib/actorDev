@@ -1,21 +1,11 @@
 import React, { Component } from 'react';
-import Swiper from 'swiper';
 
 import MovieSlides from './../containers/movie_slides';
+import mySwiper from './../js/hero_init';
 
 class MovieSlider extends Component {
   componentDidMount(){
-    var mySwiper = new Swiper('.swiper-container', {
-      direction: 'vertical',
-      mousewheel: {
-        invert: false,
-        releaseOnEdges: true,
-        sensitivity: 1
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-     });
+    mySwiper();
   }
   render() {
     return (

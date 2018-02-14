@@ -8,7 +8,12 @@ class MovieSlides extends Component {
   renderSlides() {
      return this.props.movieSlides.map((item) => {
        const divStyle = {
-         background:item.background
+       }
+       const imgLeft = {
+         backgroundImage:`url(${item.img_left})`
+       }
+       const imgRight = {
+         backgroundImage:`url(${item.img_right})`
        }
        return (
          <div
@@ -16,8 +21,8 @@ class MovieSlides extends Component {
            key={item.id}
            style={divStyle}
            >
-            <h1>{item.title}</h1>
-            <p>{item.content}</p>
+            <div style={imgLeft} className="left-img"></div>
+            <div style={imgRight} className="right-img"></div>
          </div>
        );
      });

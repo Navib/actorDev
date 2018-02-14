@@ -9,8 +9,9 @@ import Footer from './../components/footer';
 
 class HomePage extends Component {
   componentDidMount() {
-    var scrollbar = Scrollbar.init(document.querySelector('#my-scrollbar'));
-
+    const scrollbar = Scrollbar.init(document.querySelector('#my-scrollbar'),{
+      damping: .1,
+    });
     // scrollbar.addListener(function() {
     //   const scrollPos = true;
     //   let aboutA = scrollbar.isVisible(document.querySelector('.blue_bg'));
