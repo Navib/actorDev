@@ -15,7 +15,6 @@ class MovieSlider extends Component {
         <MenuOverlay />
         <div className="swiper-container">
           <MovieSlides />
-          <div className="swiper-pagination"></div>
         </div>
       </div>
     )

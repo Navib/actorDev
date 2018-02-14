@@ -21,7 +21,10 @@ class MenuOverlay extends Component {
           </a>
         </div>
         <div className="left-bar">
-          <p>New York City</p>
+          <p><span aria-hidden="true" className="icon-location"></span>New York City</p>
+        </div>
+        <div className="bottom-bar upDown">
+          <img src="/assets/images/mouse-outline.png" className="mouse-icon" />
         </div>
       </div>
     )

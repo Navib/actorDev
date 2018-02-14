@@ -3,5 +3,10 @@
 
 
 html, body {
-  font-family: $ubuntu;
+  font-family: $globalFont;
+  text-shadow: #fff 0px 1px 1px;
+  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+color: #444444
 }
