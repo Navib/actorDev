@@ -14,10 +14,15 @@ var mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
   },
  });
+ mySwiper.on('init', function() {
+   $('#counter').html(nextIndex);
+ })
  mySwiper.on('transitionStart', function () {
    const slideIndex = mySwiper.realIndex;
    const prevIndex =  slideIndex - 1;
    const nextIndex = slideIndex + 1;
+
+    $('#counter').html(nextIndex);
      //Current
     $('.swiper-slide:eq('+slideIndex+')').children().css({height:'100%'});
     $('.swiper-slide:eq('+prevIndex+')').children().css({height:'0%', top:'0', bottom:'initial'});

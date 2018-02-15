@@ -31,6 +31,11 @@
     justify-content: center;
     align-items: flex-start;
 
+    span {
+      font-size: calc(30px - .0625em);
+      margin: 0 6px;
+    }
+
     img {
       width: 40px;
       height: 40px;
@@ -125,7 +130,7 @@
       text-transform: uppercase;
 
       span {
-        margin: 1em 0;
+        margin: 0.5em 0;
         font-size: 26px;
       }
     }
@@ -133,7 +138,7 @@
 }
 
 .upDown {
-  animation: MoveUpDown 1.6s ease-in-out infinite;
+  animation: MoveUpDown 0.8s ease-in-out infinite;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -149,5 +154,31 @@
 
   100% {
     bottom: 0;
+  }
+}
+
+.leftRight {
+  animation: LeftRight 0.8s ease-in-out infinite;
+  display: inline-block;
+}
+@keyframes LeftRight {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(-10deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(20deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(-5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
   }
 }

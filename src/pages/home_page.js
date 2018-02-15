@@ -4,6 +4,7 @@ import Scrollbar from 'smooth-scrollbar';
 import BodyGrid from './../containers/body_grid';
 import MovieSlider from './../components/movie_slider';
 import Footer from './../components/footer';
+import Intro from './../components/intro';
 
 
 
@@ -23,6 +24,7 @@ class HomePage extends Component {
   render() {
     return (
       <div className="home-page page-body" id="my-scrollbar">
+        <Intro />
         <MovieSlider />
         <BodyGrid
           id="0"

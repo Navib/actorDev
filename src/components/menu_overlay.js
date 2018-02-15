@@ -13,18 +13,19 @@ class MenuOverlay extends Component {
         </div>
         <div className="right-bar">
           <a href="" className="activate-menu">
-            MENU
+            CONTACT
             <span className="top line"></span>
             <span className="right line"></span>
             <span className="bottom line"></span>
             <span className="left line"></span>
           </a>
         </div>
-        <div className="left-bar">
-          <p><span aria-hidden="true" className="icon-location"></span>New York City</p>
+        <div className="left-bar ">
+          <p><span aria-hidden="true" className="icon-location leftRight "></span>New York City</p>
         </div>
-        <div className="bottom-bar upDown">
-          <img src="/assets/images/mouse-outline.png" className="mouse-icon" />
+        <div className="bottom-bar ">
+          <span id="base">0</span>
+          <span id="counter">1</span>
         </div>
       </div>
     )
