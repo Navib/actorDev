@@ -11,7 +11,9 @@ import Intro from './../components/intro';
 class HomePage extends Component {
   componentDidMount() {
     const scrollbar = Scrollbar.init(document.querySelector('#my-scrollbar'),{
-      damping: .1,
+      speed:'3.5',
+      overscrollEffect:'bounce',
+      damping:'.04',
     });
     // scrollbar.addListener(function() {
     //   const scrollPos = true;
