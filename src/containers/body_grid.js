@@ -13,7 +13,9 @@ import { connect } from 'react-redux';
          <div
            className="list-group-item"
            key={item.quote}
-           >{item.quote}
+           >
+             <p className="quote-body">{item.quote}</p>
+             <p className="credit">{item.credit}</p>
          </div>
        );
      });
@@ -25,7 +27,7 @@ import { connect } from 'react-redux';
          <div
            className="list-group-item-large"
            key={item.quote}
-           >{item.quote}
+          >
          </div>
        );
      });
