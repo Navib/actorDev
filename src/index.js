@@ -11,6 +11,7 @@ import './../scss/main.scss';
 import HomePage from './pages/home_page';
 import Biography from './components/biography';
 import Contact from './components/contact';
+import Menu from './components/menu';
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
@@ -24,6 +25,7 @@ ReactDOM.render(
           <Link className="btn btn-danger" to="/biography">Bio</Link>
           <Link className="btn btn-danger" to="/contact">Contact</Link>
         </nav>
+        <Menu />
         <Switch>
           <Route path="/contact" component={Contact} />
           <Route path="/biography" component={Biography} />

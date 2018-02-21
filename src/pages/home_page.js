@@ -1,27 +1,14 @@
 import React, { Component } from 'react';
-import Scrollbar from 'smooth-scrollbar';
+import scrollBar from './../js/scroll.js';
 
 import BodyGrid from './../containers/body_grid';
 import MovieSlider from './../components/movie_slider';
 import Footer from './../components/footer';
 import Intro from './../components/intro';
 
-
-
 class HomePage extends Component {
   componentDidMount() {
-    const scrollbar = Scrollbar.init(document.querySelector('#my-scrollbar'),{
-      speed:'3.5',
-      overscrollEffect:'bounce',
-      damping:'.04',
-    });
-    // scrollbar.addListener(function() {
-    //   const scrollPos = true;
-    //   let aboutA = scrollbar.isVisible(document.querySelector('.blue_bg'));
-    //   console.log('visible:', aboutA);
-    //
-    // });
-
+    scrollBar();
   }
   render() {
     return (
