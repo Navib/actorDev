@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import $ from "jquery";
 
 function mySwiper() {
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.movie-container', {
   direction: 'vertical',
   speed:1400,
   mousewheel: {

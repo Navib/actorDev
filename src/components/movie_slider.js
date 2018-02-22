@@ -13,7 +13,7 @@ class MovieSlider extends Component {
       <div className="movie-slider-wrapper">
         <div className="custom-bg"></div>
         <MenuOverlay />
-        <div className="swiper-container">
+        <div className="swiper-container movie-container">
           <MovieSlides />
         </div>
       </div>

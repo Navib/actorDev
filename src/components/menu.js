@@ -1,6 +1,7 @@
 import React , { Component } from 'react';
 
 import menu from './../js/menu';
+import Videos from './../containers/videos';
 
 class Menu extends Component {
   componentDidMount() {
@@ -10,6 +11,7 @@ class Menu extends Component {
     return (
       <div id="menu" >
         <div className="menu-container">
+          <Videos />
           <a href="" className="activate-menu">
             CONTACT
             <span className="top line"></span>

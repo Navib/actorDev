@@ -17,7 +17,7 @@ class MovieSlides extends Component {
        }
        return (
          <div
-           className="swiper-slide"
+           className="swiper-slide movie-slide"
            key={item.id}
            style={divStyle}
            >
@@ -29,7 +29,7 @@ class MovieSlides extends Component {
   }
   render() {
     return (
-      <div className="swiper-wrapper">
+      <div className="swiper-wrapper movie-wrapper">
         {this.renderSlides()}
       </div>
     )
