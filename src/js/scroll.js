@@ -14,11 +14,9 @@ function scrollBar() {
     let nextEl = false;
 
     let arr = $('.scroll-content');
-    console.log(arr);
     let node = parseInt($("#counter").html());
     node = node;
-    node
-    console.log(node);
+
     if(currEl && node < 4 && node > 1) {
       scrollbar.scrollIntoView(document.querySelector('.movie-slider-wrapper'));
     }

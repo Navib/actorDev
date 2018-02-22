@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+
 class Videos extends Component {
   constructor(props){
     super(props);
@@ -11,17 +12,26 @@ class Videos extends Component {
       console.log(item);
       return (
         <div
-          className="video-slide"
+          className="video-iframe col-sm-3"
           key={item.id}
         >
-        {item.video}
-      </div>
+          <iframe
+            className="cs-iframe"
+            frameBorder="0"
+            src={item.src}
+            allowFullScreen
+            ></iframe>
+        </div>
       )
     });
   }
   render() {
     return (
-      <div className="swiper-wrapper">{this.renderVids()}</div>
+      <div className="container video-container ">
+        <div className="row video-row">
+          {this.renderVids()}
+        </div>
+      </div>
     )
   }
 }
