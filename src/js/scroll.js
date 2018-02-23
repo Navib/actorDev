@@ -15,11 +15,14 @@ function scrollBar() {
 
     let arr = $('.scroll-content');
     let node = parseInt($("#counter").html());
-    node = node;
 
-    if(currEl && node < 4 && node > 1) {
-      scrollbar.scrollIntoView(document.querySelector('.movie-slider-wrapper'));
-    }
+    let video = false;
+    $('.movie-slide video').on('click', function() {
+        video= !video;
+        if(video) {
+              scrollbar.scrollIntoView(document.querySelector('.movie-slider-wrapper'));
+        }
+    });
 
   });
 }
