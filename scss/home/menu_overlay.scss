@@ -32,7 +32,7 @@
     align-items: flex-start;
 
     span {
-      font-size: calc(30px - .0625em);
+      font-size: calc(30px - 0.0625em);
       margin: 0 6px;
     }
 
@@ -59,7 +59,7 @@
       text-decoration: none;
       padding: 25px;
       position: relative;
-      color: #444444;
+      color: #444;
 
       .line.top {
         left: 1%;
@@ -94,7 +94,7 @@
         position: absolute;
         background: #787772;
         transition-duration: 0.45s;
-        transition-property: top,right,bottom,left,width,height;
+        transition-property: top, right, bottom, left, width, height;
         transition-delay: 0s;
       }
     }
@@ -107,7 +107,7 @@
 
       .left,
       .right {
-        height:: 98%;
+        height: 98%;
       }
     }
   }
@@ -143,6 +143,7 @@
   left: 0;
   bottom: 0;
 }
+
 @keyframes MoveUpDown {
   0% {
     bottom: 0;
@@ -161,6 +162,7 @@
   animation: LeftRight 0.8s ease-in-out infinite;
   display: inline-block;
 }
+
 @keyframes LeftRight {
   0% {
     -webkit-transform: rotate(10deg);

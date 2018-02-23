@@ -26,7 +26,7 @@
       text-decoration: none;
       padding: 25px;
       position: absolute;
-      color: #444444;
+      color: #444;
       z-index: 99;
       right: 5em;
       top: 50%;
@@ -65,7 +65,7 @@
         position: absolute;
         background: #787772;
         transition-duration: 0.45s;
-        transition-property: top,right,bottom,left,width,height;
+        transition-property: top, right, bottom, left, width, height;
         transition-delay: 0s;
       }
     }
@@ -78,7 +78,7 @@
 
       .left,
       .right {
-        height:: 98%;
+        height: 98%;
       }
     }
   }

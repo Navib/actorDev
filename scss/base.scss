@@ -1,11 +1,12 @@
 // COLOR PALLETE
-$white: #ffffff;
+$white: #fff;
 $blue: #e9ece5;
 $tan: #3b3a36;
-$brown: #1d2120;
-// FONTS
+$brown: #1d2120; // FONTS
+
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600');
 $globalFont: 'Titillium Web', sans-serif;
+
 @font-face {
   font-family: 'icomoon';
   src: url("/assets/fonts/icomoon/fonts/icomoon.eot");
@@ -14,19 +15,22 @@ $globalFont: 'Titillium Web', sans-serif;
   font-style: normal;
 }
 
-.icon-location:before {
+.icon-location::before {
   content: "\e947";
-  font-family: 'icomoon';
+  font-family: 'icomoon', serif;
 }
-.icon-arrow-down2:before {
+
+.icon-arrow-down2::before {
   content: "\ea3e";
-  font-family: 'icomoon';
+  font-family: 'icomoon', serif;
 }
-.icon-arrow-down-right2:before {
+
+.icon-arrow-down-right2::before {
   content: "\ea3d";
-  font-family: 'icomoon';
+  font-family: 'icomoon', serif;
 }
-.icon-arrow-down-left2:before {
+
+.icon-arrow-down-left2::before {
   content: "\ea3f";
-  font-family: 'icomoon';
+  font-family: 'icomoon', serif;
 }
