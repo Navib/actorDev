@@ -17,19 +17,20 @@ class MovieSlides extends Component {
        }
        return (
          <div
-           className="swiper-slide movie-slide"
+           className="movie-slide"
            key={item.id}
            style={divStyle}
            >
-            <div style={imgLeft} className="left-img"></div>
-            <div style={imgRight} className="right-img"></div>
+          <video>
+                <source src={item.src} type="video/mp4" />
+          </video>
          </div>
        );
      });
   }
   render() {
     return (
-      <div className="swiper-wrapper movie-wrapper">
+      <div className="movie-wrapper">
         {this.renderSlides()}
       </div>
     )

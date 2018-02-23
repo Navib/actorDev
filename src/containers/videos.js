@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import growVideos from './../js/videos';
+
 
 class Videos extends Component {
   constructor(props){
     super(props);
     console.log(this.props);
+  }
+  componentDidMount(){
   }
   renderVids() {
     return this.props.videos.map((item) => {

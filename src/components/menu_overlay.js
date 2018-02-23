@@ -23,10 +23,6 @@ class MenuOverlay extends Component {
         <div className="left-bar ">
           <p><span aria-hidden="true" className="icon-location leftRight "></span>New York City</p>
         </div>
-        <div className="bottom-bar ">
-          <span id="base">0</span>
-          <span id="counter">1</span>
-        </div>
       </div>
     )
   }
